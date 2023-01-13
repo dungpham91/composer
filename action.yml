@@ -103,7 +103,7 @@ runs:
       run: |
         set -e
         bash <(curl -s https://raw.githubusercontent.com/php-actions/php-build/v2.2.0/php-build.bash) composer
-        ${{GITHUB_ACTION_PATH}}/composer-action.bash
+        ${GITHUB_ACTION_PATH}/composer-action.bash
       shell: bash
 
 branding:
